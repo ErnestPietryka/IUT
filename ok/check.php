@@ -22,9 +22,10 @@
             $res  = $stmt->execute();
             if ($username=$res->fetch()){
                 if($password=$res->fetch()){
+                    echo("croustipute");
                    
                         header("Location:logged.php");
-                        exit();
+
                     
                 }
             }
