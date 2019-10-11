@@ -18,11 +18,11 @@
             } catch (\PDOException $e) {
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
             }
-            $stmt = $pdo->prepare("SELECT all FROM UserLogin where UserName =  $username");
-            $res  = $stmt->execute();
-            if ($username=$res->fetch()){
-                if($password=$res->fetch()){
-                    echo("croustipute");
+            $stmt = $pdo->prepare("SELECT all FROM UserLogin where UserName = ?");
+            $res  = $stmt->execute([$username]);
+            if ($row=$res->fetch()){
+                if($row["Password"] == $password){
+                    echo("ok");
                    
                         header("Location:logged.php");
 
