@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<link href="style.css" rel="stylesheet" type="text/css">
+			
 		<meta charset="utf-8">
 		<title>Login</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 
-		<?php echo "Ceci est du texte"; ?>
+	
 	</head>
 	<body>
 		<div class="login">
@@ -21,9 +21,8 @@
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
 				<input type="submit" value="Login">
-			</form>
+            </form>
+            <?php echo "Ceci est du texte"; ?>
 		</div>
 	</body>
 </html>
-
-<?php echo "Ceci est du texte"; ?>
