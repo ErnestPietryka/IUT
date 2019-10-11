@@ -18,6 +18,7 @@
             } catch (\PDOException $e) {
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
             }
-            $sql = "INSERT INTO UserLogin (UserName, Password, iq)
-            VALUES ('$username', '$password', '$iq')";
+            $stmt = $pdo->prepare("INSERT INTO UserLogin (UserName, Password, iq)
+            VALUES ('$username', '$password', '$iq')");
+            $stmt->execute();
             ?>
