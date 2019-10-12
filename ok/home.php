@@ -12,7 +12,7 @@
 		<div class="Register">
 			<h1>Register</h1>
 			<form action="authenticate.php" method="post">
-				<label for="usegregername">
+				<label for="Ernest">
 					<i class="fas fa-user"></i>
 				</label>
 				<input type="text" name="username" placeholder="Username" id="username" required>
