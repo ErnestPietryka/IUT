@@ -3,16 +3,16 @@
 	<head>
 			
 		<meta charset="utf-8">
-		<title>Register</title>
+		<title>Login</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 
 	
 	</head>
 	<body>
-		<div class="Register">
-			<h1>Register</h1>
-			<form action="authenticate.php" method="post">
-				<label for="usegregername">
+		<div class="login">
+			<h1>Login</h1>
+			<form action="check.php" method="post">
+				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
 				<input type="text" name="username" placeholder="Username" id="username" required>
