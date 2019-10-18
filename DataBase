@@ -1,7 +1,0 @@
-CREATE TABLE UserLogin (
-	UserName varchar(16) not null,
-	Password varchar(16) not null,
-	iq INTEGER not null,
-	primary key (UserName)
-);
-	
