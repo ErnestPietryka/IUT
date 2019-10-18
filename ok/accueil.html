@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Partie qui qui contient les métadonnées qui concerne le site, comme son nom et des liens vers des fichiers CSS qui s'appliquent à la page -->
+      <title> Accueil</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <!-- Permet à la page d'étre responsite et utilisable sur mobile -->
+      <meta name="HandheldFriendly" content="true" />
+      <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+      <!-- Lien vers le fichier CSS -->
+      <link rel="stylesheet" type="text/css" href="styleCSS/style.css" />
+   </head>
+   <body>
+      <!-- Il s'agit du contenu principal du document HTML. -->
+      <header>
+         <!--  Il s'agit de l'en-tête, il contient le logo et le menu -->
+         <div class="sec1">
+            <!-- Le logo -->
+            <a href="accueil.html">
+            <img id="logo" src="images/logo1.png" alt="logo">
+            </a>
+            <!-- case à cocher pour créer le hamburger menu -->
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <!-- Le menu et les sous-menus -->
+            <nav>
+               <ul>
+                  <li><a href="accueil.html">Home</a></li>
+                  <li>
+                     <a href="login.html">Login</a>
+                     
+                  <li>
+                     <a href="Register.html">Register</a>
+                  </li>
+                  <li>
+                     <a href="About.html">About</a>
+                  </li>
+                     </ul>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div id="page">
+         <!-- Le corps du site -->
+         <article>
+            <!-- Un article divisé en deux partie : gauche et droite -->
+            <h2> Welcome to IQ Trainer </h2>
+            <div class=contenue>
+               <div class="droite">
+                  <img src="images/accueil.png"  alt="Photo d'accueil'">
+               </div>
+               <div class="gauche">
+                  <h3>What is IQ Trainer ?</h3>
+                  <p>IQ Trainer is a free service that lets you improve your cognitive performance through intensive online training. 
+                  </p>
+               </div>
+            </div>
+         </article>
+         <main class="carte">
+            <!-- Les vignettes (carte) en bas de la carte -->
+            <!-- <article>
+               <a href="competences.html">
+               <img src="images/competence.png" alt="Sample photo">
+               <button>Start your training now</button>
+               </a>
+            </article>
+            <article>
+               <a href="experiences.html">
+               <img src="images/experiance.png" alt="Sample photo">
+               <button>Learn more about the training</button>
+               </a>
+            </article>
+             -->
+         </main>
+      </div>
+      <!-- Footer -->
+      <footer>
+         <!--Le pied de page -->
+         <div>IQ Trainer | 2019-2020</div>
+         <div> Ernest Pietryka | Nicolas Orvain | Julien Dewerpe
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>

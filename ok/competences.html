@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <!-- Partie qui qui contient les métadonnées qui concerne le site, comme son nom et des liens vers des fichiers CSS qui s'appliquent à la page -->
+      <title>ePortfolio - Compétences</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <!-- Permet à la page d'étre responsite et utilisable sur mobile -->
+      <meta name="HandheldFriendly" content="true" />
+      <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+      <!-- Lien vers le fichier CSS -->
+      <link rel="stylesheet" type="text/css" href="styleCSS/style.css" />
+   </head>
+   <body>
+      <!-- Il s'agit du contenu principal du document HTML. -->
+      <header>
+         <!--  Il s'agit de l'en-tête, il contient le logo et le menu -->
+         <div class="sec1">
+            <!-- Le logo -->
+            <a href="accueil.html">
+            <img id="logo" src="images/logo1.png" alt="logo">
+            </a>
+            <!-- case à cocher pour créer le hamburger menu -->
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <!-- Le menu et les sous-menus -->
+            <nav>
+               <ul>
+                  <li><a href="accueil.html">Accueil</a></li>
+                  <li>
+                     <a href="competences.html">Compétences</a>
+                     <ul>
+                        <li><a href="competences.html#developpementweb">Développement Web</a></li>
+                        <li><a href="competences.html#C&C++">C & C++</a></li>
+                        <li><a href="competences.html#video">Réalisation Vidéo</a></li>
+                        </li>
+                     </ul>
+                  <li>
+                     <a href="experiences.html">Expériences</a>
+                     <ul>
+                        <li><a href="experiences.html#jobdete">Job d'été</a></li>
+                        <li><a href="experiences.html#stage">Stage</a></li>
+                        </li>
+                     </ul>
+                  <li>
+                     <a href="loisirs.html">Loisirs</a>
+                     <ul>
+                        <li><a href="loisirs.html#fitness">Fitness</a></li>
+                        <li><a href="loisirs.html#musique">Musique</a></li>
+                        <li><a href="loisirs.html#cinema">Cinema</a></li>
+                        </li>
+                     </ul>
+                  <li>
+                     <a href="index.html">Index</a>
+                     <ul>
+                        <li><a href="index.html#lindex">L'index</a></li>
+                        <li><a href="index.html#formulaire">Formulaire</a></li>
+                        </li>
+                     </ul>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div id="page">
+         <!-- Le corps du site -->
+         <article>
+            <!-- Un article divisé en deux partie : gauche et droite -->
+            <a name="developpementweb"></a>
+            <h2>Développement Web</h2>
+            <div class=contenue>
+               <div class="gauche">
+                  <img src="images/code.gif"  alt="Photo de Profil">
+               </div>
+               <div class="droite">
+                  <h3>HTML/CSS</h3>
+                  <p>J'ai appris au cours de mon cursus à l'IUT Paris Descartes à
+                     créer des sites internet en utilisant les langages
+                     de balisage HTML et CSS. C'est en utilisant ces
+                     technologies que ce ePortfolio a été créer.
+                  </p>
+                  <h3>Bootstrap</h3>
+                  <p>Je sais également utilisé le framework Bootstrap. Cet outil m'a permis de créer le formulaire présent dans l'index.
+                     Vous pouvez y accéder en cliquant sur le lien ci-dessous.
+                  </p>
+                  <div class="lien">
+                     <a href="Index.html">
+                        <p>Decouvrir la page utilisant Bootstrap</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </article>
+         <article>
+            <!-- Un article divisé en deux partie : gauche et droite -->
+            <a name="C&C++"></a>
+            <h2>C & C++</h2>
+            <div class=contenue>
+               <div class="droite">
+                  <img src="images/c++.png"  alt="Photo de Profil">
+               </div>
+               <div class="gauche">
+                  <h3>Le language C</h3>
+                  <p>Lors de mon premier semestre à l'IUT Paris Descartes, j'ai
+                     eu l'occasion de réaliser un projet en langage C.
+                     Il s'agitait d'une application permettant de chronométrer une
+                     course de ski. Le projet a été réalisé en utilisant des méthodes de développement agile.
+                  </p>
+                  <h3>Et le C++</h3>
+                  <p>J'ai également commencé à apprendre le C++.
+                     Ce langage étant très proche du C, l'apprentissage est facile.
+                  </p>
+               </div>
+            </div>
+         </article>
+         <article>
+            <!-- Un article intégrant un titre, du texte et une video Youtube -->
+            <a name="video"></a>
+            <h2>Réalisation Vidéo</h2>
+            <p>L'une de mes compétences est la réalisation vidéo. Vous pouvez voir
+               ci-dessous la vidéo que j'ai pu réaliser avec Hicham Attigui
+               et Soren Buisson à l'occasion de la Nuit de l'Info 2018.
+            </p>
+            <div class="video">
+               <iframe src="https://www.youtube-nocookie.com/embed/tQxNctzLQUo?vq=hd1080&theme=light&color=white"
+                  frameborder="0"
+                  allowfullscreen="allowfullscreen"
+                  mozallowfullscreen="mozallowfullscreen"
+                  msallowfullscreen="msallowfullscreen"
+                  oallowfullscreen="oallowfullscreen"
+                  webkitallowfullscreen="webkitallowfullscreen">
+               </iframe>
+            </div>
+         </article>
+      </div>
+      <!-- fin id="page"-->
+      <!-- Footer -->
+      <footer>
+         <!--Le pied de page -->
+         <div>ePortfolio | Ernest Pietryka | 2018-2019</div>
+         <div>Contact :
+            <a href="https://www.facebook.com/ErnestPietryka" target="_blank">Facebook</a>
+         </div>
+      </footer>
+   </body>
+</html>

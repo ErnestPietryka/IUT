@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <!-- Partie qui qui contient les métadonnées qui concerne le site, comme son nom et des liens vers des fichiers CSS qui s'appliquent à la page -->
+      <title>ePortfolio - Expérience</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <!-- Permet à la page d'étre responsite et utilisable sur mobile -->
+      <meta name="HandheldFriendly" content="true" />
+      <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+      <!-- Lien vers le fichier CSS -->
+      <link rel="stylesheet" type="text/css" href="styleCSS/style.css" />
+   </head>
+   <body>
+      <!-- Il s'agit du contenu principal du document HTML. -->
+      <header>
+         <!--  Il s'agit de l'en-tête, il contient le logo et le menu -->
+         <div class="sec1">
+            <!-- Le logo -->
+            <a href="accueil.html">
+            <img id="logo" src="images/logo1.png" alt="logo">
+            </a>
+            <!-- case à cocher pour créer le hamburger menu -->
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <!-- Le menu et les sous-menus -->
+            <nav>
+               <ul>
+                  <li><a href="accueil.html">Accueil</a></li>
+                  <li>
+                     <a href="competences.html">Compétences</a>
+                     <ul>
+                        <li><a href="competences.html#developpementweb">Développement Web</a></li>
+                        <li><a href="competences.html#C&C++">C & C++</a></li>
+                        <li><a href="competences.html#video">Réalisation Vidéo</a></li>
+                        </li>
+                     </ul>
+                  <li>
+                     <a href="experiences.html">Expériences</a>
+                     <ul>
+                        <li><a href="experiences.html#jobdete">Job d'été</a></li>
+                        <li><a href="experiences.html#stage">Stage</a></li>
+                        </li>
+                     </ul>
+                  <li>
+                     <a href="loisirs.html">Loisirs</a>
+                     <ul>
+                        <li><a href="loisirs.html#fitness">Fitness</a></li>
+                        <li><a href="loisirs.html#musique">Musique</a></li>
+                        <li><a href="loisirs.html#cinema">Cinema</a></li>
+                        </li>
+                     </ul>
+                  <li>
+                     <a href="index.html">Index</a>
+                     <ul>
+                        <li><a href="index.html#lindex">L'index</a></li>
+                        <li><a href="index.html#formulaire">Formulaire</a></li>
+                        </li>
+                     </ul>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div id="page">
+         <!-- Le corps du site -->
+         <article>
+            <!-- Un article divisé en deux partie : gauche et droite -->
+            <a name="stage"></a>
+            <h2>Stage</h2>
+            <div class=contenue>
+               <div class="gauche">
+                  <img src="images/brainly.png"  alt="Photo de Profil">
+               </div>
+               <div class="droite">
+                  <h3>Brainly</h3>
+                  <p>J'ai également effectué un stage dans la start-up
+                     Brainly.com à Cracovie. Il s'agit d'un site web spécialisé
+                     dans le soutien scolaire en ligne.
+                  </p>
+                  <h3>Mon rôle</h3>
+                  <p>À Brainly, j'ai travaillé sur l'amélioration, la promotion
+                     et la modération de NosDevoir.fr, la branche française de la start-up.
+                  </p>
+               </div>
+            </div>
+         </article>
+         <article>
+            <!-- Un article divisé en deux partie : gauche et droite -->
+            <a name="jobdete"></a>
+            <h2>Job d'été</h2>
+            <div class=contenue>
+               <div class="droite">
+                  <img src="images/chantier.png"  alt="Photo de Profil">
+               </div>
+               <div class="gauche">
+                  <h3>Assistant chantier</h3>
+                  <p>J'ai eu l'occasion, à plusieurs reprise, de travailler
+                     sur des chantiers de rénovation en tant qu'assistant ouvrier.
+                  </p>
+                  <h3>Mes fonctions</h3>
+                  <p>Je réalisais des tâches de seconde œuvre, notament de la peinture,
+                     de la manutention, de la préparation et du nettoyage.
+                  </p>
+               </div>
+            </div>
+         </article>
+
+      </div>
+      <!-- fin id="page"-->
+      <!-- Footer -->
+      <footer>
+         <!--Le pied de page -->
+         <div>ePortfolio | Ernest Pietryka | 2018-2019</div>
+         <div>Contact :
+            <a href="https://www.facebook.com/ErnestPietryka" target="_blank">Facebook</a>
+         </div>
+      </footer>
+   </body>
+</html>
