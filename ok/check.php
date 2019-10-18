@@ -1,7 +1,6 @@
 <?php 
             $username = $_REQUEST['username'];
             $password = $_REQUEST['password'];
-            $iq = 0;
             $host ="localhost";
             $db = 'iq';
             $user = 'iq';
@@ -18,15 +17,16 @@
             } catch (\PDOException $e) {
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
             }
-            $stmt = $pdo->prepare("SELECT all FROM UserLogin where UserName = ?");
+            $stmt = $pdo->prepare("SELECT * FROM UserLogin where UserName = ?");
             $res  = $stmt->execute([$username]);
+
+
             if ($row=$res->fetch()){
                 if($row["Password"] == $password){
                     echo("ok");
                    
-                        header("Location:logged.php");
-
-                    
+                    header("Location:logged.php");
+                    exit();
                 }
             }
             else {
